@@ -1,5 +1,9 @@
 import org.scalatest.FunSuite
 
+/*
+ScalaTest class containung unit tests for the CafeX product
+@Author Ryan Corcoran
+ */
 class CafeTests extends FunSuite {
 
   val cafeX = new CafeX
