@@ -4,7 +4,7 @@
 		module="ddct_recruitment_exercise$sources"
 		revision="0.1"
 		status="integration"
-		publication="20180927140522"
+		publication="20180927142743"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
