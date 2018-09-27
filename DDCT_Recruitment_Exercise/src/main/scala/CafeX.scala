@@ -13,4 +13,15 @@ class CafeX {
     case "Cheese Sandwich" => cheeseSandwich.price
     case "Steak Sandwich" => steakSandwich.price
   }
+
+  //takes in a list of products and adds the prices of each and returns the overall price
+  def breakDownList (products: Array[String]): Double = {
+    var returnPrice = 0.0
+    //for each product, add the price onto returnPrice
+    for (p <- products) {
+       returnPrice += addItemPrice(p)
+    }
+    //return the price
+    returnPrice
+  }
 }
