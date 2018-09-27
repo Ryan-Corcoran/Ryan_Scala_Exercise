@@ -1,7 +1,7 @@
 
 /*
 Class designed to create the menu items and instantiate the Cafe.
-@Author - Ryan Corocran
+@Author - Ryan Corcoran
  */
 class CafeX {
 
@@ -10,6 +10,12 @@ class CafeX {
   val coffee: MenuItem = MenuItem("Coffee", "Hot", "Drink", 1.00)
   val cheeseSandwich: MenuItem = MenuItem("Cheese Sandwich", "Cold", "Food", 2.00)
   val steakSandwich: MenuItem = MenuItem("Steak Sandwich", "Hot", "Food", 4.50)
+
+  def fullPurchase(productList: Array[String]): Double = {
+    val productPrice = breakDownList(productList)
+    val scModifier = checkServiceCharge(productList)
+    productPrice + addServiceCharge(productPrice, scModifier)
+  }
 
   /*
   takes in a product name and returns the price of the product

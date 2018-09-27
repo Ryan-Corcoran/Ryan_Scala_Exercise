@@ -1,7 +1,7 @@
 import org.scalatest.FunSuite
 
 /*
-ScalaTest class containung unit tests for the CafeX product
+ScalaTest class continuing unit tests for the CafeX product
 @Author Ryan Corcoran
  */
 class CafeTests extends FunSuite {
@@ -72,5 +72,17 @@ class CafeTests extends FunSuite {
   test ("Service charge capped to £20") {
     val scValue = cafeX.addServiceCharge(250.00, 1.2)
     assert(scValue == 20.00)
+  }
+
+  test ("Overall e2e flow with 10% service charge") {
+    val productList: Array[String] = Array("Cola", "Coffee", "Cheese Sandwich")
+    val price = cafeX.fullPurchase(productList)
+    assert(price == 3.85)
+  }
+
+  test ("Overall e2e with 20% service charge") {
+    val productList: Array[String] = Array("Steak Sandwich", "Cola")
+    val price = cafeX.fullPurchase(productList)
+    assert(price == 6.00)
   }
 }
