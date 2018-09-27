@@ -63,4 +63,14 @@ class CafeX {
     case "Cheese Sandwich" => cheeseSandwich
     case "Steak Sandwich" => steakSandwich
   }
+
+  def addServiceCharge(totalPrice: Double, scModifier: Double): Double = {
+    val serviceCharge = BigDecimal(totalPrice * (scModifier - 1.00)).setScale(2, BigDecimal.RoundingMode.HALF_UP).toDouble
+    if (serviceCharge > 20.00) {
+      20.00
+    }
+    else {
+      serviceCharge
+    }
+  }
 }
