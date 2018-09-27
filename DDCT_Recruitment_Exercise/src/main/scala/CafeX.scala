@@ -1,3 +1,8 @@
+
+/*
+Class designed to create the menu items and instantiate the Cafe.
+@Author - Ryan Corocran
+ */
 class CafeX {
 
   //creating the menu items
@@ -6,7 +11,12 @@ class CafeX {
   val cheeseSandwich: MenuItem = MenuItem("Cheese Sandwich", "Cold", "Food", 2.00)
   val steakSandwich: MenuItem = MenuItem("Steak Sandwich", "Hot", "Food", 4.50)
 
-  //takes in a product name and returns the price of the product
+  /*
+  takes in a product name and returns the price of the product
+  @param string containing the product
+  @return double of the price of the product
+  @author Ryan Corcoran
+   */
   def addItemPrice(product: String): Double = product match {
     case "Cola" => cola.price
     case "Coffee" => coffee.price
@@ -14,7 +24,12 @@ class CafeX {
     case "Steak Sandwich" => steakSandwich.price
   }
 
-  //takes in a list of products and adds the prices of each and returns the overall price
+  /*
+  takes in a list of products and adds the prices of each and returns the overall price
+  @param an array of type string containing each of the products purchased
+  @return a double of the price of all products in the list combined
+  @author Ryan Corcoran
+   */
   def breakDownList (products: Array[String]): Double = {
     var returnPrice = 0.0
     //for each product, add the price onto returnPrice
