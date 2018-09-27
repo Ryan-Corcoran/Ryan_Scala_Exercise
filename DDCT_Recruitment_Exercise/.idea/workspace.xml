@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b042cf23-4ed8-46f4-8db3-de276c8f8484" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/CafeX.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/CafeX.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/scala/CafeTests.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/CafeTests.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/CafeX.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/CafeX.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/test-classes/CafeTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/test-classes/CafeTests.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,24 +40,24 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="sbt" value="1" />
-          <entry key="scala" value="5" />
+          <entry key="scala" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Scala" value="5" />
+          <entry key="Scala" value="6" />
           <entry key="sbt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="sbt" value="4" />
-          <entry key="scala" value="5324" />
+          <entry key="scala" value="5855" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Scala" value="5324" />
+          <entry key="Scala" value="5855" />
           <entry key="sbt" value="4" />
         </counts>
       </usages-collector>
@@ -71,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/CafeX.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+            <state relative-caret-position="400">
+              <caret line="66" column="7" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -85,11 +88,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/scala/CafeTests.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="64" column="3" selection-start-line="64" selection-start-column="3" selection-end-line="64" selection-end-column="3" />
+            <state relative-caret-position="536">
+              <caret line="73" column="27" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -106,8 +109,8 @@
         <option value="$PROJECT_DIR$/src/main/scala/CafeXMenuItem.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/CafeXTests.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/MenuItem.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/CafeTests.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/CafeX.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/CafeTests.scala" />
       </list>
     </option>
   </component>
@@ -130,7 +133,57 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DDCT_Recruitment_Exercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DDCT_Recruitment_Exercise" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DDCT_Recruitment_Exercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DDCT_Recruitment_Exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DDCT_Recruitment_Exercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DDCT_Recruitment_Exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DDCT_Recruitment_Exercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DDCT_Recruitment_Exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DDCT_Recruitment_Exercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DDCT_Recruitment_Exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DDCT_Recruitment_Exercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DDCT_Recruitment_Exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DDCT_Recruitment_Exercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DDCT_Recruitment_Exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -231,12 +284,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CafeTests - 2018.09.27 at 20h 04m 51s.xml">
-      <configuration name="CafeTests" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="CafeTests - 2018.09.27 at 20h 05m 46s.xml">
-      <configuration name="CafeTests" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
     <history-entry file="CafeTests - 2018.09.27 at 20h 06m 12s.xml">
       <configuration name="CafeTests" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
@@ -261,16 +308,22 @@
     <history-entry file="CafeTests - 2018.09.27 at 20h 14m 00s.xml">
       <configuration name="CafeTests" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
+    <history-entry file="CafeTests - 2018.09.27 at 20h 53m 07s.xml">
+      <configuration name="CafeTests" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="CafeTests - 2018.09.27 at 20h 56m 39s.xml">
+      <configuration name="CafeTests" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14890000" />
+    <option name="totallyTimeSpent" value="15464000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.26865673" />
-      <window_info id="Structure" order="1" side_tool="true" visible="true" weight="0.25266525" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49838188" visible="true" weight="0.26865673" />
+      <window_info id="Structure" order="1" sideWeight="0.50161815" side_tool="true" visible="true" weight="0.26865673" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -353,17 +406,17 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/MenuItem.scala">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/CafeTests.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/CafeX.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="64" column="3" selection-start-line="64" selection-start-column="3" selection-end-line="64" selection-end-column="3" />
+        <state relative-caret-position="400">
+          <caret line="66" column="7" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/CafeX.scala">
+    <entry file="file://$PROJECT_DIR$/src/test/scala/CafeTests.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+        <state relative-caret-position="536">
+          <caret line="73" column="27" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="27" />
         </state>
       </provider>
     </entry>

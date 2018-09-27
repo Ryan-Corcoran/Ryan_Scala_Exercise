@@ -63,4 +63,14 @@ class CafeTests extends FunSuite {
     val SVModifier = cafeX.checkServiceCharge(productList)
     assert(SVModifier == 1.20)
   }
+
+  test ("Service charge less than £20") {
+    val scValue = cafeX.addServiceCharge(100.00, 1.1)
+    assert(scValue == 10.00)
+  }
+
+  test ("Service charge capped to £20") {
+    val scValue = cafeX.addServiceCharge(250.00, 1.2)
+    assert(scValue == 20.00)
+  }
 }
