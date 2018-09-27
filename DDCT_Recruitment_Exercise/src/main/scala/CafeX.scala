@@ -30,13 +30,37 @@ class CafeX {
   @return a double of the price of all products in the list combined
   @author Ryan Corcoran
    */
-  def breakDownList (products: Array[String]): Double = {
+  def breakDownList(products: Array[String]): Double = {
     var returnPrice = 0.0
     //for each product, add the price onto returnPrice
     for (p <- products) {
-       returnPrice += addItemPrice(p)
+      returnPrice += addItemPrice(p)
     }
     //return the price
     returnPrice
+  }
+
+  def checkServiceCharge(products: Array[String]): Double = {
+    var SCPercent = 1.00
+    for (product <- products) {
+      if (returnMenuItem(product).cat == "Food") {
+        if (returnMenuItem(product).temp == "Hot") {
+          SCPercent = 1.20
+        }
+        else {
+          if (SCPercent == 1.00) {
+            SCPercent = 1.10
+          }
+        }
+      }
+    }
+    SCPercent
+  }
+
+  def returnMenuItem(product: String): MenuItem = product match {
+    case "Cola" => cola
+    case "Coffee" => coffee
+    case "Cheese Sandwich" => cheeseSandwich
+    case "Steak Sandwich" => steakSandwich
   }
 }
