@@ -6,10 +6,10 @@ Class designed to create the menu items and instantiate the Cafe.
 class CafeX {
 
   //creating the menu items
-  val cola: MenuItem = MenuItem("Cola", "Cold", "Drink", 0.50)
-  val coffee: MenuItem = MenuItem("Coffee", "Hot", "Drink", 1.00)
-  val cheeseSandwich: MenuItem = MenuItem("Cheese Sandwich", "Cold", "Food", 2.00)
-  val steakSandwich: MenuItem = MenuItem("Steak Sandwich", "Hot", "Food", 4.50)
+  val cola: MenuItem = MenuItem("Cola", "Cold", "Drink", 0.50, 1.00)
+  val coffee: MenuItem = MenuItem("Coffee", "Hot", "Drink", 1.00, 1.00)
+  val cheeseSandwich: MenuItem = MenuItem("Cheese Sandwich", "Cold", "Food", 2.00, 1.10)
+  val steakSandwich: MenuItem = MenuItem("Steak Sandwich", "Hot", "Food", 4.50, 1.20)
 
   /*
   Full e2e purchasing method that calls other functions to return the total price
@@ -43,13 +43,9 @@ class CafeX {
   @author Ryan Corcoran
    */
   def breakDownList(products: Array[String]): Double = {
-    var returnPrice = 0.0
-    //for each product, add the price onto returnPrice
-    for (p <- products) {
-      returnPrice += addItemPrice(p)
-    }
+    val totalPrice = products.map(returnMenuItem(_).price).sum
     //return the price
-    returnPrice
+    totalPrice
   }
 
   /*
@@ -59,26 +55,9 @@ class CafeX {
   @author Ryan Corcoran
    */
   def checkServiceCharge(products: Array[String]): Double = {
-    var SCPercent = 1.00
-    for (product <- products) {
-      //if food category is food
-      if (returnMenuItem(product).cat == "Food") {
-        //if temp is hot
-        if (returnMenuItem(product).temp == "Hot") {
-          SCPercent = 1.20
-        }
-        else {
-          //if multiplier not yet changed and food type, then multiplier is 1.1
-          if (SCPercent == 1.00) {
-            SCPercent = 1.10
-          }
-        }
-      }
-    }
-    //return service charge multiplier
-    SCPercent
+    val SCLists = products.map(returnMenuItem(_).SCPercent).sorted
+    SCLists(SCLists.size - 1)
   }
-
   /*
   returns a type based on the string value given
   @param the string of the product purchased
